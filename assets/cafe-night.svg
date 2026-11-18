@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-label="Ilustrasi malam di kafe pegunungan, dua orang duduk memandang cahaya kota">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#11162d"/><stop offset=".47" stop-color="#44375e"/><stop offset=".75" stop-color="#bc7c78"/><stop offset="1" stop-color="#efb18e"/></linearGradient><radialGradient id="glow"><stop stop-color="#fff0bd" stop-opacity=".7"/><stop offset="1" stop-color="#ffe3bd" stop-opacity="0"/></radialGradient><linearGradient id="cafe" x2=".2" y2="1"><stop stop-color="#f9be82"/><stop offset="1" stop-color="#b56b6b"/></linearGradient></defs>
+<rect width="1280" height="800" fill="url(#sky)"/>
+<g fill="#fff0d1" opacity=".63"><circle cx="116" cy="80" r="1.8"/><circle cx="239" cy="127" r="2"/><circle cx="337" cy="61" r="1.5"/><circle cx="508" cy="120" r="1.8"/><circle cx="737" cy="77" r="2"/><circle cx="926" cy="141" r="2.2"/><circle cx="1120" cy="98" r="1.5"/><circle cx="1075" cy="278" r="1.5"/><circle cx="818" cy="235" r="1.6"/></g>
+<circle cx="927" cy="161" r="194" fill="url(#glow)"/><circle cx="927" cy="161" r="65" fill="#ffebc6"/><circle cx="900" cy="143" r="9" fill="#e4c8a8" opacity=".45"/>
+<path d="M0 430 Q165 335 320 401 T653 374 T980 375 T1280 341V800H0Z" fill="#66536a" opacity=".9"/>
+<path d="M0 478 Q184 409 353 447 T719 415 T1033 427 T1280 382V800H0Z" fill="#3d3c5b"/>
+<path d="M0 552 Q245 466 432 522 T803 494 T1280 464V800H0Z" fill="#242e45"/>
+<g fill="#fbd6a1" opacity=".8"><circle cx="65" cy="539" r="2"/><circle cx="208" cy="523" r="3"/><circle cx="404" cy="534" r="2"/><circle cx="659" cy="532" r="3"/><circle cx="813" cy="508" r="2"/><circle cx="1125" cy="476" r="2"/></g>
+<path d="M0 460H390V800H0Z" fill="#1e202e"/><path d="M40 500V295L154 213H320L385 283V545" fill="none" stroke="#201d29" stroke-width="31"/><path d="M72 487V318L162 249H301L354 313V487Z" fill="url(#cafe)"/><path d="M0 284L146 178H330L417 284Z" fill="#231f2d"/><path d="M160 252V502M72 385H355" fill="none" stroke="#322636" stroke-width="16"/>
+<path d="M0 529Q270 499 544 537T1280 513" fill="none" stroke="#c6957b" stroke-width="6"/><g fill="#ffe4ae"><circle cx="55" cy="529" r="6"/><circle cx="192" cy="516" r="5"/><circle cx="343" cy="526" r="6"/><circle cx="487" cy="535" r="5"/><circle cx="663" cy="538" r="5"/><circle cx="845" cy="532" r="6"/><circle cx="1090" cy="526" r="5"/></g>
+<path d="M0 647H1280V800H0Z" fill="#161c2e"/><path d="M0 662H1280" stroke="#b97d77" stroke-width="10"/>
+<g fill="#181a2a"><ellipse cx="722" cy="675" rx="205" ry="33" opacity=".6"/><path d="M557 674Q558 586 604 564T673 588L693 714H554Z"/><circle cx="617" cy="551" r="40"/><path d="M779 674Q781 584 823 560T895 596L921 714H777Z"/><circle cx="845" cy="547" r="41"/><path d="M623 581Q667 616 725 615M842 579Q810 619 752 615" fill="none" stroke="#181a2a" stroke-width="27" stroke-linecap="round"/></g>
+<path d="M680 643H798M702 643V725M781 643V725" stroke="#bd7f71" stroke-width="13" stroke-linecap="round"/><g fill="#f8d9b1"><path d="M728 604h16v31h-16Z"/><path d="M752 608h16v27h-16Z"/></g><path d="M733 595q-8-11 0-19m24 18q8-12 0-22" fill="none" stroke="#ffdbb8" stroke-width="3"/>
+<path d="M0 734Q336 707 624 733T1280 730V800H0Z" fill="#12172a"/>
+</svg>
