@@ -7,9 +7,9 @@ const q=(id)=>document.getElementById(id);
 const h=(t)=>String(t??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
 const id=(n)=>String(n).padStart(2,'0');
 const key='journeyasya-book-v3';
-let saved={favorites:[],read:[],last:0,mode:'day',font:19,ending:0};
+let saved={favorites:[],read:[],last:0,mode:'day',font:19,ending:0,positions:{}};
 try{saved={...saved,...JSON.parse(localStorage.getItem(key)||'{}')}}catch(_){}
-if(!Array.isArray(saved.read))saved.read=[];if(!Array.isArray(saved.favorites))saved.favorites=[];
+if(!Array.isArray(saved.read))saved.read=[];if(!Array.isArray(saved.favorites))saved.favorites=[];if(!saved.positions||typeof saved.positions!=='object')saved.positions={};
 let active=null;
 const persist=()=>{try{localStorage.setItem(key,JSON.stringify(saved))}catch(_){}};
 const sc=q('reader-scroll');
@@ -55,10 +55,10 @@ q('chapter-heading').textContent='BAB '+id(c.id)+'  ·  '+c.date.toUpperCase();
 q('reader-title').textContent=c.title;q('chapter-subtitle').textContent=c.subtitle;q('chapter-quote').textContent='“'+c.quote+'”';
 q('chapter-body').innerHTML=c.paragraphs.map(p=>'<p>'+h(p)+'</p>').join('');
 q('reader-count').textContent=id(c.id)+' / '+id(chapters.length);
-q('previous-chapter').disabled=active===0;q('next-chapter').disabled=active===chapters.length-1;
+q('previous-chapter').disabled=active===0;q('next-chapter').disabled=false;
 q('next-chapter').textContent=active===chapters.length-1?'Selesai membaca ✓':'Berikutnya →';
 renderToc();updateSettings();toggleToc(false);
-sc.scrollTop=0;q('reader-pct-bar').style.width='0%';
+sc.scrollTop=0;q('reader-pct-bar').style.width='0%';requestAnimationFrame(()=>{sc.scrollTop=Math.min(Number(saved.positions[active]||0),Math.max(0,sc.scrollHeight-sc.clientHeight));const max=Math.max(1,sc.scrollHeight-sc.clientHeight);q('reader-pct-bar').style.width=Math.round(sc.scrollTop/max*100)+'%';});
 q('reader-close').focus({preventScroll:true});
 }
 function navigateChapter(n){
@@ -93,7 +93,7 @@ let readingTick=null;
 sc.addEventListener('scroll',()=>{
 if(active===null)return;
 if(readingTick)cancelAnimationFrame(readingTick);
-readingTick=requestAnimationFrame(()=>{const max=sc.scrollHeight-sc.clientHeight;const p=max>0?Math.min(100,Math.round(sc.scrollTop/max*100)):100;q('reader-pct-bar').style.width=p+'%';if(p>=94)completeChapter()});
+readingTick=requestAnimationFrame(()=>{if(active!==null){saved.positions[active]=Math.round(sc.scrollTop);persist();}const max=sc.scrollHeight-sc.clientHeight;const p=max>0?Math.min(100,Math.round(sc.scrollTop/max*100)):100;q('reader-pct-bar').style.width=p+'%';if(p>=94)completeChapter()});
 },{passive:true});
 document.addEventListener('keydown',e=>{
 if(active===null)return;
