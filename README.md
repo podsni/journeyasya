@@ -42,7 +42,9 @@ journeyasya/
 │   ├── images/
 │   │   ├── cafe-night.svg
 │   │   ├── dawn.svg
-│   │   └── icon.svg
+│   │   ├── icon.svg
+│   │   ├── rain-coffee.svg
+│   │   └── road-night.svg
 │   └── books/novel-hendra-tasya.pdf
 ├── src/
 │   ├── App.jsx

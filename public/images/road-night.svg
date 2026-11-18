@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Ilustrasi perjalanan malam di jalan pegunungan dengan bulan dan lampu kota">
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#15172e"/><stop offset=".55" stop-color="#443451"/><stop offset="1" stop-color="#a36d7b"/></linearGradient>
+<radialGradient id="moon"><stop stop-color="#ffe6b3" stop-opacity=".6"/><stop offset="1" stop-color="#ffe8b8" stop-opacity="0"/></radialGradient>
+<linearGradient id="road" x2="0" y2="1"><stop stop-color="#6d6471"/><stop offset="1" stop-color="#2b303b"/></linearGradient>
+</defs>
+<rect width="1200" height="760" fill="url(#sky)"/>
+<circle cx="863" cy="142" r="169" fill="url(#moon)"/><circle cx="863" cy="142" r="63" fill="#ffe4b5"/><circle cx="845" cy="127" r="12" fill="#d8bfa6" opacity=".35"/><circle cx="897" cy="165" r="9" fill="#d8bfa6" opacity=".31"/>
+<g fill="#ffe8cb" opacity=".7"><circle cx="120" cy="108" r="2"/><circle cx="252" cy="73" r="2"/><circle cx="341" cy="198" r="1.7"/><circle cx="495" cy="97" r="1.9"/><circle cx="621" cy="173" r="1.5"/><circle cx="723" cy="70" r="1.6"/><circle cx="1067" cy="92" r="2.1"/><circle cx="1116" cy="256" r="2"/><circle cx="195" cy="246" r="1.5"/><circle cx="723" cy="289" r="2"/></g>
+<path d="M0 456Q157 356 277 405T531 375T811 391T1200 347V760H0Z" fill="#786079"/>
+<path d="M0 503Q155 420 313 472T678 413T1200 423V760H0Z" fill="#4c4c67"/>
+<path d="M0 577Q144 491 299 533T581 491T897 493T1200 464V760H0Z" fill="#313e51"/>
+<g fill="#f4be8c" opacity=".75"><circle cx="101" cy="573" r="3"/><circle cx="165" cy="560" r="3"/><circle cx="206" cy="597" r="3"/><circle cx="272" cy="560" r="4"/><circle cx="730" cy="536" r="3"/><circle cx="794" cy="567" r="3"/><circle cx="912" cy="520" r="3"/><circle cx="1044" cy="550" r="3"/><circle cx="1116" cy="502" r="4"/></g>
+<path d="M0 705Q248 642 377 645T640 625Q761 609 664 567Q595 537 463 548Q395 548 387 514Q386 492 418 484" stroke="#161f30" stroke-width="170" fill="none"/>
+<path d="M0 705Q248 642 377 645T640 625Q761 609 664 567Q595 537 463 548Q395 548 387 514Q386 492 418 484" stroke="url(#road)" stroke-width="147" fill="none"/>
+<path d="M0 705Q248 642 377 645T640 625Q761 609 664 567Q595 537 463 548Q395 548 387 514Q386 492 418 484" stroke="#ead9ad" stroke-width="4" stroke-dasharray="27 28" fill="none" opacity=".65"/>
+<path d="M0 705Q248 642 377 645T640 625Q761 609 664 567Q595 537 463 548Q395 548 387 514Q386 492 418 484" stroke="#d19b80" stroke-width="2" fill="none" opacity=".4"/>
+<g transform="translate(420 632) rotate(12)"><path d="M-48 7h96l-7-26h-78Z" fill="#1c1c29"/><path d="M-28-17h56l-6-21h-44Z" fill="#141725"/><rect x="-39" y="7" width="18" height="7" rx="3" fill="#e95e65"/><rect x="21" y="7" width="18" height="7" rx="3" fill="#e95e65"/><rect x="-45" y="13" width="90" height="7" rx="4" fill="#0c121a"/></g>
+<path d="M0 725Q150 689 256 706T550 693T850 649T1200 632V760H0Z" fill="#202d39"/>
+<g stroke="#1a2632" stroke-width="12" stroke-linecap="round">
+<path d="M65 680V511m-75 68 75-69 80 71M65 568l-60-56m60 49 53-74"/>
+<path d="M1122 655V426m-111 96 111-96 100 120m-100-53-70-75m70 40 54-70"/>
+</g>
+</svg>

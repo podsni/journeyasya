@@ -4,8 +4,8 @@ import './styles.css';
 
 const chapters = story.chapters;
 const timeline = story.timeline || story.milestones || [];
-const art = ['/images/cafe-night.svg', '/images/dawn.svg'];
-const scene = (i) => art[Math.floor(i / 3) % 2];
+const art = ['/images/cafe-night.svg', '/images/dawn.svg', '/images/rain-coffee.svg', '/images/road-night.svg'];
+const scene = (i) => art[Math.floor(i / 3) % art.length];
 const pdf = '/books/novel-hendra-tasya.pdf';
 const num = (n) => String(n).padStart(2, '0');
 const route = () => { const m = location.hash.match(/^#\/baca\/(\d{1,2})/); return m ? Math.max(0, Math.min(11, +m[1] - 1)) : null; };
@@ -163,7 +163,7 @@ export default function App() {
       <section id="cerita" className="intro container">
         <div className="eyebrow">01 — PROLOG</div>
         <div className="intro-grid"><h2>Beberapa cerita tidak dimulai dengan kata <em>“cinta”.</em></h2><p>Kadang bermula dari obrolan sederhana, kopi yang mulai dingin, dan kalimat yang membuat seseorang tersenyum. Hendra mulai mengagumi Tasya sebagai seseorang yang memiliki dunia, cerita, dan pilihan sendiri.</p></div>
-        <div className="gallery"><figure><img src="/images/cafe-night.svg" alt="Ilustrasi suasana kafe malam" /><figcaption>01 &nbsp; MALAM YANG MENGINGATKAN</figcaption></figure><figure><img src="/images/dawn.svg" alt="Ilustrasi senja pegunungan" /><figcaption>02 &nbsp; HARI YANG PERLAHAN BERUBAH</figcaption></figure></div>
+        <div className="gallery"><figure><img src="/images/cafe-night.svg" alt="Ilustrasi suasana kafe malam" /><figcaption>01 &nbsp; MALAM YANG MENGINGATKAN</figcaption></figure><figure><img src="/images/rain-coffee.svg" alt="Ilustrasi dua cangkir kopi dan surat saat hujan" /><figcaption>02 &nbsp; HARI YANG PERLAHAN BERUBAH</figcaption></figure></div>
         <blockquote>“Ada orang yang datang sebagai pertemuan. Ada pula yang perlahan tinggal sebagai ingatan.”<small>— BAB PERTAMA</small></blockquote>
       </section>
       <section id="linimasa" className="timeline-area">
