@@ -34,7 +34,7 @@ journeyasya/
 │   └── icon.svg                # Favicon
 ├── data/
 │   └── story.js                # Isi 12 bab dan 14 momen (sumber konten)
-├── scripts/
+├── src/
 │   └── app.js                  # Navigasi, reader, progress, localStorage
 ├── styles/
 │   └── main.css                # Desain & layout responsif
@@ -60,7 +60,7 @@ Buka http://localhost:8000.
 
 1. Edit `data/story.js`. Semua teks bab berada pada `window.JOURNEY_STORY.chapters`; tiap bab berisi `id`, `title`, `date`, `subtitle`, `quote`, `paragraphs`, dan `minutes`.
 2. Edit `milestones` untuk menambah/mengubah momen timeline. Properti `chapter` mengacu ke nomor bab.
-3. Edit `styles/main.css` untuk tampilan dan `scripts/app.js` untuk interaksi.
+3. Edit `styles/main.css` untuk tampilan dan `src/app.js` untuk interaksi.
 4. Bila cerita berubah, **buat ulang PDF** di `downloads/` agar versi unduh selaras.
 5. Uji di layar 390 px, 768 px, dan desktop. Uji tombol A+/A−, daftar isi, pergantian tema, scroll, PDF, dan tautan bab.
 
