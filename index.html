@@ -1,76 +1,47 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
+<!doctype html>
+<html lang="id"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#14121d">
+<meta name="description" content="Journeyasya — novel digital interaktif tentang perjalanan Hendra dan Tasya, dari kekaguman hingga belajar memberi ruang.">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Journeyasya — Hendra & Tasya | Novel Interaktif</title>
-<meta name="description" content="Sebuah perjalanan tentang kekaguman, kehangatan, dan belajar memberi ruang. Novel interaktif 12 bab dengan linimasa dan ilustrasi.">
-<meta property="og:title" content="Journeyasya — Sebuah cerita yang belum selesai">
-<meta property="og:description" content="12 bab, 14 kenangan, satu perjalanan tentang mengagumi dengan hormat.">
-<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<meta property="og:title" content="Journeyasya | Hendra & Tasya">
+<meta property="og:description" content="Sebuah cerita yang belum selesai, dibaca satu halaman pada satu waktu.">
+<link rel="icon" type="image/svg+xml" href="/assets/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="/styles/main.css">
-<script defer src="/data/story.js"></script>
-<script defer src="/scripts/app.js"></script>
-</head>
+<title>Journeyasya — Hendra & Tasya</title></head>
 <body>
-<a href="#konten" class="skip">Langsung ke konten</a>
-<div id="pageProgress" class="progress" aria-hidden="true"></div>
+<a class="skip" href="#main">Langsung ke cerita</a><div id="scroll-progress" class="progress" aria-hidden="true"></div>
 <header class="site-head">
-  <a class="brand" href="#atas" aria-label="Journeyasya, kembali ke beranda">Hendra <span>&</span> Tasya<small>JOURNEYASYA · 2026</small></a>
-  <nav class="desktop-nav" aria-label="Navigasi utama">
-    <a href="#kisah">Kisah</a><a href="#novel">Baca novel</a><a href="#linimasa">Linimasa</a><a href="#galeri">Ilustrasi</a><a href="#surat">Surat</a>
-  </nav>
-  <div class="head-tools">
-    <a class="quiet-btn" href="/downloads/novel-hendra-tasya.pdf" download="Novel-Hendra-dan-Tasya.pdf" aria-label="Unduh novel PDF">↓ PDF</a>
-    <button class="menu-trigger" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Buka menu">☰</button>
-  </div>
-  <nav id="mobileMenu" class="mobile-menu" hidden aria-label="Menu seluler">
-    <a href="#kisah">Kisah</a><a href="#novel">Baca novel</a><a href="#linimasa">Linimasa</a><a href="#galeri">Ilustrasi</a><a href="#surat">Surat</a><a href="/downloads/novel-hendra-tasya.pdf" download="Novel-Hendra-dan-Tasya.pdf">Unduh PDF</a>
-  </nav>
+<a class="brand" href="#awal" aria-label="Journeyasya, beranda">J<span>✦</span> <small>JOURNEYASYA</small></a>
+<nav class="desktop-nav" aria-label="Navigasi utama"><a href="#cerita">Cerita</a><a href="#bab">Daftar bab</a><a href="#linimasa">Linimasa</a><a href="#galeri">Suasana</a><a href="#surat">Surat</a></nav>
+<div class="head-tools"><a class="quiet-btn" href="/books/novel-hendra-tasya.pdf" download="Novel_Hendra_Tasya.pdf">↓ Download PDF</a><button id="nav-toggle" class="menu-trigger" aria-expanded="false" aria-controls="mobile-menu">☰ Menu</button></div>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Navigasi mobile" hidden><a href="#cerita">Cerita</a><a href="#bab">Daftar bab</a><a href="#linimasa">Linimasa</a><a href="#galeri">Suasana</a><a href="#surat">Surat</a><a href="/books/novel-hendra-tasya.pdf" download>Unduh PDF</a></nav>
 </header>
-<main id="konten">
-  <section id="atas" class="hero" aria-label="Sampul Journeyasya">
-    <div class="hero-photo" aria-hidden="true"></div><div class="hero-glow" aria-hidden="true"></div>
-    <div class="hero-content"><div class="eyebrow">✦ NOVEL INTERAKTIF · JULI—NOVEMBER 2026</div>
-      <h1>Hendra <em>&</em><br>Tasya.</h1>
-      <p class="hero-copy">Ada nama yang datang sebagai teman, lalu perlahan menjadi halaman yang ingin kita baca kembali.</p>
-      <div class="hero-actions"><button id="startBtn" class="pill" type="button">Mulai membaca <span aria-hidden="true">↗</span></button><a class="quiet-btn" href="#linimasa">Lihat perjalanan ↓</a></div>
-      <div class="hero-meta"><span>12 bab novel</span><span>14 momen</span><span>Ilustrasi & perjalanan</span></div>
-    </div><span class="scroll-cue">GULIR UNTUK MENJELAJAH</span>
-  </section>
-  <section class="section wrap introduction" id="kisah">
-    <div class="intro-visual reveal" role="img" aria-label="Lanskap pegunungan dengan cahaya senja"></div>
-    <div class="intro-copy reveal"><span class="eyebrow">01 — PROLOG</span><h2>Sebuah cerita yang <em>belum selesai.</em></h2>
-      <p>Berawal dari sebuah ajakan ngopi di Fajar Baru, malam-malam di Malang, percakapan kecil, dan cerita yang lama-lama memiliki tempat tersendiri di ingatan Hendra.</p>
-      <blockquote>“Ada pertemuan yang kita syukuri bukan karena akhirnya, melainkan karena apa yang kita pelajari di sepanjang jalan.”</blockquote>
-      <p>Novel ini ditulis dari sudut pandang Hendra. Perasaan, suasana, dan adegan merupakan dramatisasi, bukan pernyataan mengenai perasaan Tasya.</p>
-      <div class="features"><span class="feature">☕ Fajar Baru</span><span class="feature">☾ Malam di Malang</span><span class="feature">✦ 12 Bab</span><span class="feature">♡ Catatan perjalanan</span></div>
-    </div>
-  </section>
-  <section class="section paper-section" id="novel"><div class="wrap"><header class="section-head center reveal"><div class="eyebrow">02 — THE STORYBOOK</div><h2>Buka sebuah bab.<br><em>Masuk ke dalam cerita.</em></h2><p>Baca dengan mode terang atau malam, atur ukuran tulisan, pilih bab dari daftar isi, lalu lanjutkan dari halaman terakhir. Pengaturan tersimpan di perangkatmu.</p></header>
-    <div class="chapter-controls"><div class="completion"><strong id="readCount">0</strong> dari 12 bab selesai <span class="bar" aria-label="Progres baca"><b id="doneBar"></b></span></div><button id="continueBtn" class="quiet-btn" type="button">Mulai membaca →</button></div>
-    <div class="book-grid" id="chapterCards" aria-label="Daftar dua belas bab"></div>
-    <div style="text-align:center;margin-top:32px"><a class="pill" href="/downloads/novel-hendra-tasya.pdf" download="Novel-Hendra-dan-Tasya.pdf">↓ Download novel lengkap (PDF)</a></div>
-    <p class="nudge" style="text-align:center">PDF bisa dibaca tanpa koneksi internet setelah diunduh.</p>
-  </div></section>
-  <section class="section wrap" id="linimasa"><header class="section-head reveal"><div class="eyebrow">03 — JEJAK WAKTU</div><h2>Kenangan yang<br><em>menjadi titik cerita.</em></h2><p>14 momen yang dipetakan dari Juli hingga November 2026. Pilih bulan atau ketuk momen untuk membaca bab yang berkaitan.</p></header><div class="month-filters" id="filters" role="group" aria-label="Filter momen berdasarkan bulan"></div><div class="timeline-list" id="moments" aria-live="polite"></div></section>
-  <section class="section gallery" id="galeri"><div class="wrap"><header class="section-head reveal"><div class="eyebrow">04 — ILLUSTRATED MOMENTS</div><h2>Setiap halaman punya <em>suasana.</em></h2><p>Dari hangatnya kafe saat malam hingga cahaya di tepi pegunungan. Ilustrasi artistik untuk menemani pembaca, bukan dokumentasi foto peristiwa nyata.</p></header><div class="gallery-layout"><div class="gallery-frame reveal"><img src="/assets/cafe-night.svg" alt="Ilustrasi dua orang mengobrol di kafe pegunungan pada malam hari" loading="lazy"><span>Sebuah malam, sebuah percakapan.</span></div><div class="gallery-frame reveal"><img src="/assets/dawn.svg" alt="Ilustrasi matahari terbit di atas pegunungan berlapis" loading="lazy"><span>Dan pagi yang terus datang.</span></div></div></div></section>
-  <section class="section wrap letter-section" id="surat"><div class="reveal"><div class="eyebrow">05 — AN UNSENT LETTER</div><h2 style="font:clamp(42px,5vw,64px)/1.1 var(--serif);margin:16px 0">Surat yang <em style="color:#efb9a6">tak harus dikirim.</em></h2><p style="font:18px/1.85 var(--serif);color:#d6c5cb">Ada hal-hal yang bisa dituliskan untuk mengenang, tanpa meminta seseorang kembali atau menjawab.</p><p class="nudge">Surat ini merupakan monolog fiksi dari sudut pandang Hendra.</p><div id="letterPaper" class="letter-paper" hidden><h3>Untuk Tasya,</h3><p>Terima kasih untuk percakapan, tawa, dan waktu yang pernah kita bagi. Aku belajar mengagumi keberanianmu menjadi dirimu sendiri, sekaligus belajar bahwa ketulusan tidak memberikan hak untuk menuntut balasan.</p><p>Jika suatu hari jalan kita bertemu, semoga aku mampu datang dengan lebih baik dan tetap menghormati pilihanmu. Bila tidak, aku ingin kenangan ini tinggal sebagai rasa syukur, bukan sebagai alasan untuk mengusik ketenanganmu.</p><p style="text-align:right">— Hendra, dalam novel</p><small>Tidak terkirim · Novelisasi, bukan pesan asli</small></div></div><button id="letterToggle" class="envelope reveal" aria-expanded="false" type="button"><span>Ketuk untuk membuka surat</span></button></section>
-  <section class="section wrap" id="akhir"><div class="ending reveal"><div class="eyebrow">06 — EPILOG</div><h2 style="font:clamp(40px,5.3vw,66px)/1.1 var(--serif);margin:18px 0">Halaman berikutnya<br><em style="color:#efb9a6">masih terbuka.</em></h2><blockquote>“Aku boleh mengagumi seseorang tanpa menjadikannya bertanggung jawab atas perasaanku.”</blockquote><p>Ini bukan akhir yang memutuskan nasib dua orang. Ini sebuah ruang untuk menghargai yang pernah ada dan melanjutkan hidup dengan baik.</p><button class="quiet-btn" id="lastBtn" type="button">Baca bab terakhir ↗</button></div></section>
-</main>
-<footer class="footer"><strong>Hendra <span style="color:#eab8a4">&</span> Tasya.</strong><p>Sebuah novel interaktif. 2026 · Journeyasya.</p><p>Ditulis dari sudut pandang Hendra; beberapa detail merupakan interpretasi kreatif. Mohon hormati privasi dan persetujuan orang yang diceritakan.</p><a href="#atas">Kembali ke atas ↑</a></footer>
-<nav class="mobile-dock" aria-label="Navigasi cepat"><a href="#atas"><span>⌂</span>Beranda</a><a href="#novel"><span>▤</span>Novel</a><a href="#linimasa"><span>◷</span>Timeline</a><a href="/downloads/novel-hendra-tasya.pdf" download="Novel-Hendra-dan-Tasya.pdf"><span>↓</span>PDF</a></nav>
-<section class="reader day" id="reader" hidden aria-label="Pembaca novel" role="dialog" aria-modal="true">
-  <aside class="reader-sidebar" aria-label="Daftar isi buku"><div class="side-top"><strong>Hendra & Tasya</strong><small>ISI BUKU · 12 BAB</small></div><div class="side-list" id="tocList"></div><div style="padding:16px;border-top:1px solid #ffffff24"><a class="quiet-btn" style="width:100%" href="/downloads/novel-hendra-tasya.pdf" download="Novel-Hendra-dan-Tasya.pdf">↓ Unduh PDF</a></div></aside>
-  <button type="button" id="tocBackdrop" class="reader-mobile-backdrop" aria-label="Tutup daftar isi"></button>
-  <div class="reader-main"><div class="reader-bar"><button type="button" class="control toc-toggle" id="tocToggle" title="Daftar isi" aria-label="Buka daftar isi">☰</button><span class="titlebar" id="readerTitlebar">BAB 01 / 12</span><button type="button" class="control" id="smaller" title="Perkecil huruf" aria-label="Perkecil huruf">A−</button><button type="button" class="control" id="larger" title="Perbesar huruf" aria-label="Perbesar huruf">A+</button><button type="button" class="control" id="readerTheme" title="Mode siang atau malam" aria-label="Ganti tema baca">☾</button><button type="button" class="control" id="readerClose" aria-label="Tutup pembaca">✕</button></div>
-  <div class="reader-pct" aria-hidden="true"><b id="chapterProgress"></b></div>
-  <div class="reader-scroll" id="readerScroll" tabindex="0"><article class="book-page"><figure class="illustration"><img id="chapterVisual" src="/assets/cafe-night.svg" alt="Ilustrasi suasana bab"><figcaption id="chapterSetting">Malang · 2026</figcaption></figure>
-    <div id="bookIntro" class="chapter-heading"></div><h2 id="bookTitle"></h2><p class="chapter-sub" id="bookSubtitle"></p><blockquote id="bookQuote"></blockquote><div id="bookText" class="reader-copy"></div><div class="chapter-end">❦<br>— Akhir bab —</div></article></div>
-  <div class="reader-foot"><button type="button" id="prevBtn">← Sebelumnya</button><span class="reading-status" id="readingState"></span><button type="button" id="favoriteBtn">♡ Favorit</button><button type="button" id="nextBtn">Bab berikutnya →</button></div></div>
-</section>
-<div id="toast" role="status" aria-live="polite" hidden style="position:fixed;z-index:250;bottom:90px;left:50%;transform:translateX(-50%);background:#e5b8a6;color:#2a1c2c;padding:10px 20px;border-radius:30px;box-shadow:0 10px 30px #0005;font-size:12px;white-space:nowrap"></div>
-</body>
-</html>
+<main id="main"><section class="hero" id="awal"><div class="hero-photo" aria-hidden="true"></div><div class="hero-glow" aria-hidden="true"></div><div class="hero-content">
+<div class="eyebrow">HENDRA & TASYA · JULI — NOVEMBER 2026</div>
+<h1>Ada cerita<br>yang <em>tinggal</em><br>di hati.</h1>
+<p class="hero-copy">Berawal dari sebuah ajakan ngopi, satu balasan “Bayoohhh”, lalu perjalanan tentang kagum, kenangan, dan belajar memahami.</p>
+<div class="hero-actions"><button id="start-reading" class="pill">✦ Mulai membaca <span>→</span></button><a href="#linimasa" class="quiet-btn">Jelajahi perjalanan ↓</a></div>
+<div class="hero-meta"><span>12 BAB NOVEL</span><span>14 MOMEN</span><span>1 PERJALANAN</span></div>
+</div><div class="scroll-cue">GULIR KE BAWAH</div></section>
+<section class="wrap section introduction" id="cerita"><div class="intro-visual" role="img" aria-label="Ilustrasi matahari terbit di pegunungan"></div><div class="intro-copy reveal"><span class="eyebrow">01 / SEBUAH PERJALANAN</span><h2>Beberapa kisah tidak dimulai dengan “aku cinta kamu”.</h2><p>Kadang hanya dimulai dari sebuah pesan yang membuat kita tersenyum lebih lama daripada biasanya. Ada kisah yang berjalan pelan, penuh kelakar, tanpa tahu kapan harus menamai perasaannya.</p><p>Dalam novel ini, Hendra mengingat kembali pertemuan-pertemuan yang ia simpan, kekagumannya terhadap dunia Tasya, dan apa yang akhirnya ia pelajari tentang menerima pilihan seseorang.</p><blockquote>“Ada orang yang datang sebagai pertemuan. Ada pula yang perlahan tinggal sebagai ingatan.”</blockquote><div class="features"><span class="feature">✦ Bab interaktif</span><span class="feature">☾ Mode malam</span><span class="feature">♡ Simpan bab</span><span class="feature">↓ Unduh PDF</span></div></div></section>
+<section class="paper-section" id="bab"><div class="wrap section"><div class="section-head center reveal"><span class="eyebrow">02 / NOVEL DIGITAL</span><h2>Dua belas bab,<br><em>satu kisah.</em></h2><p>Pilih bab yang ingin dibaca atau ikuti perjalanan dari awal. Ukuran huruf, pilihan tema, dan progres tersimpan di perangkatmu.</p></div>
+<div class="chapter-controls"><div class="completion" id="completion-label">Belum ada bab selesai <span class="bar"><b id="completion-bar"></b></span></div><button id="resume-reading" class="quiet-btn">Lanjut membaca →</button></div><div id="chapters" class="book-grid"></div></div></section>
+<section class="wrap section" id="linimasa"><div class="section-head reveal"><span class="eyebrow">03 / JEJAK WAKTU</span><h2>Waktu berjalan.<br><em>Kenangan tinggal.</em></h2><p>Empat belas momen perjalanan yang bisa dibuka satu per satu. Klik peristiwa untuk membaca kisah yang berkaitan.</p></div><div id="month-filters" class="month-filters" role="group" aria-label="Filter bulan"></div><div id="timeline" class="timeline-list"></div></section>
+<section class="gallery" id="galeri"><div class="wrap section"><div class="section-head reveal"><span class="eyebrow">04 / RUANG SUASANA</span><h2>Gambar untuk<br><em>mengingat rasa.</em></h2><p>Ilustrasi suasana yang mengiringi perjalanan; bukan foto dokumentasi atau representasi wajah orang yang sebenarnya.</p></div><div class="gallery-layout"><div class="gallery-frame"><img src="/assets/cafe-night.svg" loading="lazy" alt="Ilustrasi kafe bercahaya hangat di bawah bulan, dua orang duduk menikmati pemandangan"><span>Hal yang sederhana sering tinggal paling lama.</span></div><div class="gallery-frame"><img src="/assets/dawn.svg" loading="lazy" alt="Ilustrasi matahari terbit di atas lapisan pegunungan"><span>Tiap pagi memberi halaman yang baru.</span></div></div></div></section>
+<section class="wrap section letter-section" id="surat"><div><span class="eyebrow">05 / SURAT YANG TAK DIKIRIM</span><div class="section-head"><h2>Ada kata yang tak harus dikirim untuk berarti.</h2><p>Surat rekaan dari sudut pandang Hendra. Tidak dimaksudkan sebagai pesan yang menuntut jawaban.</p></div><button id="toggle-letter" class="pill" aria-expanded="false" aria-controls="letter-content">✉ Buka surat</button><div id="letter-content" class="letter-paper" hidden><h3>Untuk Tasya,</h3><p>Terima kasih untuk waktu, tawa, dan percakapan yang pernah ada. Aku mengagumi keberanianmu menjadi dirimu sendiri. Aku tak ingin menjadikan perasaanku sebagai beban yang harus kau jawab.</p><p>Bila kelak kita kembali bicara, semoga itu lahir dari keinginan yang sama-sama bebas. Bila tidak, aku tetap bisa mensyukuri yang baik tanpa meminta sesuatu yang tak kau pilih.</p><small>— Surat fiksi dari Hendra</small></div></div><div><button id="envelope" class="envelope" aria-label="Buka surat"><span>Untuk sebuah kenangan<br>yang tak harus dibalas.</span></button></div></section>
+<section class="wrap section"><div class="section-head center"><span class="eyebrow">06 / REFLEKSI</span><h2>Pelajaran apa yang<br>Hendra bawa?</h2><p>Pilih sebuah sudut pandang untuk menutup cerita. Pilihan ini tidak mengubah perasaan atau keputusan Tasya.</p></div><div class="ending"><div id="choices" class="choices" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px"></div><blockquote id="ending-text">Aku belajar menghormati batasan.</blockquote><p>Setiap kisah boleh terus berjalan dengan caranya sendiri.</p></div></section>
+<section class="wrap section" id="unduh"><div class="section-head center"><span class="eyebrow">07 / BUKU DIGITAL</span><h2>Bawa kisahnya<br><em>ke luar layar.</em></h2><p>Novel tersedia sebagai PDF yang dapat diunduh langsung untuk dibaca secara offline.</p><a class="pill" href="/books/novel-hendra-tasya.pdf" download="Novel_Hendra_Tasya.pdf">↓ Download novel PDF</a><div class="nudge">Tidak perlu membuat akun · Bisa dibaca di iPhone, Android, dan desktop</div></div></section></main>
+<footer class="footer"><strong>journeyasya ✦</strong><p>“Sebuah cerita yang belum selesai.”</p><p>Fiksi yang terinspirasi dari rangkuman perjalanan nyata. Adegan dan isi hati adalah interpretasi naratif dari sudut pandang Hendra, bukan pernyataan tentang Tasya.</p><p><a href="https://github.com/podsni/journeyasya" target="_blank" rel="noopener noreferrer">Source code di GitHub</a></p></footer>
+<nav class="mobile-dock" aria-label="Navigasi cepat"><a href="#awal"><span>⌂</span>Beranda</a><a href="#bab"><span>▤</span>Bab</a><a href="#linimasa"><span>◷</span>Timeline</a><a href="#unduh"><span>⇩</span>PDF</a></nav>
+<div id="reader" class="reader day" role="dialog" aria-modal="true" aria-label="Pembaca novel" hidden>
+<button id="toc-shade" class="reader-mobile-backdrop" aria-label="Tutup daftar isi" hidden></button>
+<aside class="reader-sidebar"><div class="side-top"><strong>journeyasya ✦</strong><small>DAFTAR ISI NOVEL</small><div class="nudge" id="read-progress-all">0 dari 12 bab selesai</div></div><div class="side-list" id="toc"></div><div style="padding:15px;border-top:1px solid #ffffff22"><a href="/books/novel-hendra-tasya.pdf" download class="quiet-btn" style="width:100%">↓ Unduh PDF</a></div></aside>
+<div class="reader-main"><div class="reader-bar"><button id="reader-close" class="control" aria-label="Kembali ke beranda">←</button><button id="toc-toggle" class="control toc-toggle" aria-label="Buka daftar isi">☰</button><span id="reader-bar-title" class="titlebar">Membaca</span><button id="font-down" class="control" aria-label="Kecilkan huruf">A−</button><button id="font-up" class="control" aria-label="Besarkan huruf">A+</button><button id="reader-mode" class="control" aria-label="Ubah tema baca">☾</button><button id="reader-favorite" class="control" aria-label="Simpan bab">♡</button></div><div class="reader-pct"><b id="reader-pct-bar"></b></div>
+<div class="reader-scroll reader-pane" id="reader-scroll"><article class="book-page"><figure class="illustration" style="margin-left:0;margin-right:0"><img id="reader-image" alt="Ilustrasi suasana bab" src="/assets/cafe-night.svg"><figcaption id="reader-scene">ILUSTRASI CERITA</figcaption></figure><span id="chapter-heading" class="chapter-heading">BAB 01</span><h2 id="reader-title">Bab Pertama</h2><p id="chapter-subtitle" class="chapter-sub"></p><blockquote id="chapter-quote"></blockquote><div id="chapter-body" class="reader-copy"></div><div class="chapter-end">✦ &nbsp; Bersambung pada halaman berikutnya &nbsp; ✦</div></article></div>
+<div class="reader-foot"><button id="previous-chapter">← Sebelumnya</button><span class="reading-status" id="reader-count">01 / 12</span><button id="next-chapter">Berikutnya →</button></div></div></div>
+<script defer src="/data/story.js"></script><script defer src="/src/app.js"></script>
+</body></html>
