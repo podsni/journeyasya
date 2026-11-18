@@ -12,11 +12,11 @@
 - **Sampul sinematik:** ilustrasi malam kafe dan pegunungan.
 - **Reader ala e-book:** panel buku, daftar isi, bab sebelumnya/berikutnya, keyboard ←/→ dan Esc.
 - **Pengaturan baca:** huruf A−/A+, mode kertas terang dan malam, halaman lanjut baca.
-- **Progres pribadi:** bab selesai, posisi gulir, bab terakhir, dan favorit tersimpan menggunakan `localStorage`; tidak dikirim ke server.
+- **Progres pribadi:** bab selesai, bab terakhir, dan favorit tersimpan menggunakan `localStorage`; tidak dikirim ke server.
 - **14 momen timeline:** filter per bulan, klik untuk membuka bab terkait.
 - **Galeri:** ilustrasi kafe malam dan matahari terbit (bukan foto dokumenter).
 - **Surat digital:** dibuka dengan sentuhan, sebagai monolog fiksi.
-- **PDF:** tombol unduh `/downloads/novel-hendra-tasya.pdf` yang dapat dibaca secara offline.
+- **PDF:** tombol unduh `/books/novel-hendra-tasya.pdf` yang dapat dibaca secara offline.
 - **Responsive & accessible:** layout mobile/desktop, label aksesibilitas, tampilan fokus keyboard, dan `prefers-reduced-motion`.
 
 ## Struktur folder
@@ -38,13 +38,13 @@ journeyasya/
 │   └── app.js                  # Navigasi, reader, progress, localStorage
 ├── styles/
 │   └── main.css                # Desain & layout responsif
-└── downloads/
+└── books/
     └── novel-hendra-tasya.pdf  # Novel offline
 ```
 
 ## Menjalankan di komputer
 
-Tidak membutuhkan Node.js, npm, atau build tool. Gunakan server statis lokal agar jalur `/assets/`, `/data/` dan `/scripts/` bekerja benar.
+Tidak membutuhkan Node.js, npm, atau build tool. Gunakan server statis lokal agar jalur `/assets/`, `/data/` dan `/src/` bekerja benar.
 
 ```bash
 git clone https://github.com/podsni/journeyasya.git
@@ -61,7 +61,7 @@ Buka http://localhost:8000.
 1. Edit `data/story.js`. Semua teks bab berada pada `window.JOURNEY_STORY.chapters`; tiap bab berisi `id`, `title`, `date`, `subtitle`, `quote`, `paragraphs`, dan `minutes`.
 2. Edit `milestones` untuk menambah/mengubah momen timeline. Properti `chapter` mengacu ke nomor bab.
 3. Edit `styles/main.css` untuk tampilan dan `src/app.js` untuk interaksi.
-4. Bila cerita berubah, **buat ulang PDF** di `downloads/` agar versi unduh selaras.
+4. Bila cerita berubah, **buat ulang PDF** di `books/` agar versi unduh selaras.
 5. Uji di layar 390 px, 768 px, dan desktop. Uji tombol A+/A−, daftar isi, pergantian tema, scroll, PDF, dan tautan bab.
 
 ## Deploy ke Vercel
