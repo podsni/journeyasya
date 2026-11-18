@@ -1,5 +1,4 @@
-/* Journeyasya story: konten naratif dan lini masa. Ubah teks di file ini untuk mengedit cerita. */
-window.JOURNEY_STORY = {
+const story = {
   "title": "Hendra & Tasya — Journeyasya",
   "subtitle": "Sebuah cerita yang belum selesai",
   "range": "Juli — November 2026",
@@ -297,3 +296,4 @@ window.JOURNEY_STORY = {
     }
   ]
 };
+export default story;
